@@ -4,25 +4,48 @@
 		{
 			"type": "lua-local",
 			"request": "launch",
-			"name": "Debug",
+			"name": "Debug Mac",
 			"program": {
-				"command": "love"
+				"command": "/Applications/love.app/Contents/MacOS/love"
 			},
 			"args": [
 				".",
 				"debug"
-			],
+			]
+		},
+		{
+			"type": "lua-local",
+			"request": "launch", 
+			"name": "Debug Windows",
+			"program": {
+				"command": "C:/Program Files/LOVE/love.exe"
+			},
+			"args": [
+				".",
+				"debug"
+			]
 		},
 		{
 			"type": "lua-local",
 			"request": "launch",
-			"name": "Release",
+			"name": "Release Mac",
 			"program": {
-				"command": "love"
+				"command": "/Applications/love.app/Contents/MacOS/love"
 			},
 			"args": [
-				".",
-			],
+				"."
+			]
 		},
+		{
+			"type": "lua-local",
+			"request": "launch",
+			"name": "Release Windows",
+			"program": {
+				"command": "C:/Program Files/LOVE/love.exe"
+			},
+			"args": [
+				"."
+			]
+		}
 	]
 }
